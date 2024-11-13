@@ -1,0 +1,15 @@
+itdanja@kakao.com 19시까지 제출
+
+선택2:
+    BoardServiceTest2 구현:
+    클래스 설계:
+    객체 n개 저장하는 서비스 구축
+    main함수 1개, ArrayList객체 1개 사용
+    Board클래스 캡슐화
+        모든 필드 private
+        생성시 무조건 생성자 사용
+        getter, setter, toString 함수를 이용하여 모든 필드의 데이터 간접접근
+        게시물 쓰기와 게시물 출력 기능 구축
+
+    BoardServiceTest3 구현:
+        BoardServiceTest2 클래스 내 while 문 안에 있는 게시물 등록코드와 출력 코드를 메인 밖으로 빼서 함수로 구현
