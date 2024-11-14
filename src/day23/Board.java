@@ -1,4 +1,4 @@
-package day22_assign;
+package day23;
 
 public class Board {
     private String content;
@@ -29,7 +29,7 @@ public class Board {
         this.password = password;
     }
 
-    @Override
+    @Override // 함수 재정의 - 상위클래스(Object에 이미 있는 함수를 재정의)
     public String toString() {
         return "Board{" +
                 "content='" + content + '\'' +

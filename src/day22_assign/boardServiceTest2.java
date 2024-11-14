@@ -1,5 +1,7 @@
 package day22_assign;
 
+import day23.Board;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
