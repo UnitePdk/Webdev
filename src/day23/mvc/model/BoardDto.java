@@ -23,10 +23,15 @@ public class BoardDto {
         return password;
     }
 
-    public void setter(String content,String writer,int password) {
+    public void setContent(String content) {
         this.content = content;
-        this.writer = writer;
-        this.password = password;
     }
 
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
+    public void setPassword(int password) {
+        this.password = password;
+    }
 }
