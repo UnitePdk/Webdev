@@ -1,0 +1,21 @@
+스트림: 컴퓨터 내 데이터가 다니는 통로
+    스트림은 바이트 단위로 이동한다.
+
+파일 입출력
+FileOutputStream 변수명 = new FileOutputStream(파일경로)
+    .write - 파일에 쓰는 함수
+    .read - 파일로부터 데이터를 읽어오는 함수
+
+파일
+File file = new File("파일경로");
+    .isFile() - 지정한 경로의 파일인지 반환
+    .getName() - 이름을 반환
+    .length() - 파일의 용량을 바이트로 반환
+    .exists() - 파일이 존재하는지 반환
+    .createNewFile() - 지정한 경로의 파일을 생성하는 함수, 성공시 true 반환
+
+경로
+    절대 경로: D:\javascript...
+    상대 경로:
+        ./ - 현재 위치
+        ../ - 상위 위치

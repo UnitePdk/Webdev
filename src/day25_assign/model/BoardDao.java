@@ -9,6 +9,19 @@ public class BoardDao {
     private static BoardDao boardDao = new BoardDao();
 
     private BoardDao() {
+        // 만약 파일이 존재하지 않을 경우
+        File file=new File("./src/day25_assign/data.txt");
+        if(file.exists()){
+            // 있으면 파일 로드
+            fileLoad();
+        } else{
+            // 파일 생성
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static BoardDao getInstance() {
@@ -27,7 +40,6 @@ public class BoardDao {
 
     // 게시물 출력 접근 함수
     public ArrayList<BoardDto> boardPrint() {
-        fileLoad();
         return boardDB;
     } // boardPrint end
 
@@ -44,7 +56,6 @@ public class BoardDao {
             // 객체의 필드 값 출력 후 사이에 ,쉼표로 구분하여 csv 파일로 변환
             outStr += boardDto.getContent() + "," + boardDto.getWriter() + "," + boardDto.getPwd() + "\n";
         }
-        System.out.println(outStr);
 
         // - try{}catch(){} : try{} 에서 예상치 못한 예외가 발생 했을때 지정된 catch 코드로 흐름을 이동하는 문법
         try {
@@ -77,7 +88,6 @@ public class BoardDao {
 
             // 읽어온 바이트 배열을 문자열로 변환
             String inStr = new String(bytes);
-            System.out.println(inStr);
 
             // 활용과제 : 파일로 부터 읽어온 문자열의 게시물 정보들을 다시 ArrayList<BoardDto> boardDB 에 저장하시오.
 
