@@ -1,6 +1,6 @@
-package day25_assign.controller;
-import day25_assign.model.BoardDao;
-import day25_assign.model.BoardDto;
+package day29.controller;
+import day29.model.BoardDao;
+import day29.model.BoardDto;
 
 import java.util.ArrayList;
 

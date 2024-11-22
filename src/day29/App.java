@@ -1,6 +1,6 @@
-package day25_assign;
+package day29;
 
-import day25_assign.view.BoardView;
+import day29.view.BoardView;
 
 public class App {
     public static void main(String[] args) {

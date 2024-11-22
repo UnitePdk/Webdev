@@ -1,7 +1,7 @@
-package day25_assign.view;
+package day29.view;
 
-import day25_assign.controller.BoardController;
-import day25_assign.model.BoardDto;
+import day29.controller.BoardController;
+import day29.model.BoardDto;
 
 import java.util.ArrayList;
 import java.util.Scanner;

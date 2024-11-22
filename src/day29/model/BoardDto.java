@@ -1,4 +1,4 @@
-package day25_assign.model;
+package day29.model;
 
 public class BoardDto {
     private String content;
