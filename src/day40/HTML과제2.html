@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html과제2</title>
+  </head>
+  <body>
+    <div style="display: flex; gap: 5px">
+      <span>카테고리</span>
+      <select>
+        <option>공지사항</option>
+        <option>동영상</option>
+        <option>일반</option>
+      </select>
+    </div>
+
+    <div>
+      <input type="text" placeholder="작성자" />
+      <input type="text" placeholder="비밀번호" />
+    </div>
+    <hr />
+
+    <div>
+      <input type="text" placeholder="게시물 제목 입력" />
+    </div>
+    <hr />
+
+    <div>
+      <textarea rows="16" cols="64" placeholder="게시물 내용 입력"></textarea>
+      <div>
+        <span>공개선택</span>
+        <input type="radio" /> 공개글 <input type="radio" /> 비공개글
+      </div>
+      <div>
+        <span>공유선택</span>
+        <input type="checkbox" /> 카카오톡 <input type="checkbox" /> 트위터
+        <input type="checkbox" /> 네이버카페
+      </div>
+      <div>
+        <span>작성일자</span>
+        <input type="date" />
+        <span>작성시간</span>
+        <input type="time" />
+      </div>
+      <hr />
+
+      <div>
+        <span>첨부파일</span>
+        <button>파일 선택</button>
+        <span style="font-size: small">선택된 파일 없음</span>
+      </div>
+
+      <div style="margin-top: 20px">
+        <button>목록보기</button>
+        <button>글쓰기</button>
+        <button>다시쓰기</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -77,7 +77,7 @@ drop table if exists member;
     [논리]
     BOOL		: true/false 표현, 실제로는 0/1
 */
-# 테이블 예제1
+# 테이블 예제1 
 use db1120;
 create table board(content longtext, writer varchar(30), pwd varchar(30));
 # 테이블의 내용물(레코드) 확인
