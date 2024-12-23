@@ -13,25 +13,27 @@ console.log(`2. ${num2_1 > num2_2 ? num2_1 : num2_2}`);
 let num3_1 = Number(prompt("3. 정수 입력1"));
 let num3_2 = Number(prompt("3. 정수 입력2"));
 let num3_3 = Number(prompt("3. 정수 입력3"));
-// swap 함수
-const swap = (a, b) => {
-  let temp;
-  temp = a;
-  a = b;
-  b = temp;
-};
 // 내림차순
 // 1, 2 비교
 if (num3_1 < num3_2) {
-  swap(num3_1, num3_2);
+  let temp;
+  temp = num3_1;
+  num3_1 = num3_2;
+  num3_2 = temp;
 }
 // 2, 3 비교
 if (num3_2 < num3_3) {
-  swap(num3_2, num3_3);
+  let temp;
+  temp = num3_2;
+  num3_2 = num3_3;
+  num3_3 = temp;
 }
 // 1, 2 비교
 if (num3_1 < num3_2) {
-  swap(num3_1, num3_2);
+  let temp;
+  temp = num3_1;
+  num3_1 = num3_2;
+  num3_2 = temp;
 }
 console.log(num3_1);
 
@@ -42,17 +44,26 @@ let num4_3 = Number(prompt("4. 정수 입력3"));
 // 내림차순
 // 1, 2 비교
 if (num4_1 < num4_2) {
-  swap(num4_1, num4_2);
+  let temp;
+  temp = num4_1;
+  num4_1 = num4_2;
+  num4_2 = temp;
 }
 // 2, 3 비교
 if (num4_2 < num4_3) {
-  swap(num4_2, num4_3);
+  let temp;
+  temp = num4_2;
+  num4_2 = num4_3;
+  num4_3 = temp;
 }
 // 1, 2 비교
 if (num4_1 < num4_2) {
-  swap(num4_1, num4_2);
+  let temp;
+  temp = num4_1;
+  num4_1 = num4_2;
+  num4_2 = temp;
 }
-console.log(`4. ${num4_1},${num4_2},${num4_3}`);
+console.log(`4. 내림차순: ${num4_1},${num4_2},${num4_3}`);
 
 // [지문5] 1개의 점수를 입력받아 90점 이상이면 'A등급' 80점이상이면 'B등급' 70점이상 'C등급' 그외 '재시험' 를 console.log() 함수로 출력하시오.
 const score5 = Number(prompt("5. 점수 입력"));
