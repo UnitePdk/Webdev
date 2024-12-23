@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div>
       <h3>회원가입</h3>
-      아이디: <input type="text" /> <br />
-      비밀번호: <input type="password" /> <br />
-      닉네임: <input type="text" /> <br />
-      <button>회원가입</button>
+      아이디: <input class="signid" type="text" /> <br />
+      비밀번호: <input class="signpw" type="password" /> <br />
+      닉네임: <input class="signnick" type="text" /> <br />
+      <button onclick="signUp()">회원가입</button>
     </div>
 
     <div>
       <h3>로그인</h3>
-      아이디: <input type="text" /> <br />
-      비밀번호: <input type="password" /> <br />
-      닉네임: <input type="text" /> <br />
+      아이디: <input class="loginid" type="text" /> <br />
+      비밀번호: <input class="loginpw" type="password" /> <br />
+      닉네임: <input class="loginnick" type="text" /> <br />
       <button>로그인</button>
     </div>
   </body>

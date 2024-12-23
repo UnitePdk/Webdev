@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(212, 212, 212);
+}
+
+.movieBox {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreBox {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.student {
+  width: 80px;
+}
+
+.score {
+  font-size: 6px;
+}
