@@ -105,11 +105,11 @@ for (let i = 0; i < 6; i++) {
   const num = prompt("1~45 번호 입력");
   if (num > 45 || num < 1) {
     alert("경고: 1~45 사이 값만 입력");
-    return;
+    break;
   }
   if (lottoArray.includes(num)) {
     alert("경고: 이미 등록한 번호");
-    return;
+    break;
   }
   lottoArray.push(num);
 }
