@@ -7,6 +7,8 @@
     <script src="index.js" defer></script>
   </head>
   <body>
+    <div class="member"></div>
+
     <div>
       <h3>회원가입</h3>
       아이디: <input class="signid" type="text" /> <br />
@@ -17,10 +19,26 @@
 
     <div>
       <h3>로그인</h3>
-      아이디: <input class="loginid" type="text" /> <br />
-      비밀번호: <input class="loginpw" type="password" /> <br />
-      닉네임: <input class="loginnick" type="text" /> <br />
-      <button>로그인</button>
+      아이디 : <input class="loginid" type="text" /> <br />
+      비밀번호 : <input class="loginpw" type="password" /> <br />
+      <button onclick="login()">로그인</button>
+    </div>
+
+    <div class="memberListBox">
+      <h3>회원명단</h3>
     </div>
   </body>
 </html>
+
+<!--
+선택2 (활용)
+        1. 회원가입시 아이디 중복검사 , 이미 등록된 아이디 이면 회원가입 실패 , 유효성검사.
+        2. 회원가입시 비밀번호 유효성검사 , 비밀번호는 최소 5 ~ 10 글자 이내로 입력 제한 하시오.
+        3. 로그인시 성공시 상단에 로그인성공한 회원의 닉네임을 출력하시오. 
+            로그인전 : <div class='loginNicName'>  </div>
+            로그인후 : <div class='loginNicName'> ~~님 로그인중. </div>
+        4. 로그인 화면 아래 현재 로그인된 회원들의 명단 출력하시오. 모든 회원[배열] 의 아이디와 닉네임 만 출력하시오.
+        <div class="memberListBox">
+            <h3> 회원명단 </h3>
+        </div>
+-->
